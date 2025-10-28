@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Abyss</title>
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+  <div class="dust"></div>
+
+  <nav>
+    <div class="logo">
+      <span class="white">Welcome To</span> <span class="red">Abyss</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Main</a>
+      <a href="about.html" class="active">About</a>
+      <a href="#">Discord</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="faq">
+      <div class="faq-item">
+        <button class="faq-question">What is Abyss?</button>
+        <div class="faq-answer">
+          <p>Welcome to Abyss, where socializing meets virtual chill… and occasional chaos. I’m the creator, dedicated to giving you a space to chat, relax, and maybe question your life choices in zero gravity.</p>
+          <p>Grab your headset, dive in, and remember: the only rule here is to have fun… preferably without falling into virtual lava.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Get to know me</button>
+        <div class="faq-answer">
+          <p>Hey, I’m Cawe! 15 (soon 16), still in school, and making Abyss for the experience not the money. When I’m not building VR worlds, I’m probably procrastinating homework or laughing at my own jokes. Dive in and have fun!</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How to Join</button>
+        <div class="faq-answer">
+          <p>...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.querySelectorAll(".faq-question").forEach(button => {
+      button.addEventListener("click", () => {
+        const faqItem = button.parentElement;
+        faqItem.classList.toggle("open");
+      });
+    });
+  </script>
+</body>
+</html>
